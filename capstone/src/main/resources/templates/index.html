@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Supplier Finance Management System</title>
+
+</head>
+<body>
+
+
+	<section>
+		<h1>SUPPLIER FINANCE MANAGEMENT SYSTEM</h1>
+		<h6>Supplier Finance System is a Web Application using
+			Microservice architecture with multiple microservices communicating
+			with each other, where it allows suppliers and clients to
+			register/add/view the invoices from system. Supplier finance is a
+			concept, describing a set of technology-based solutions that aim to
+			lower financing costs and improve business efficiency for buyers (or
+			clients) and sellers (or suppliers) linked in a sales transaction.
+			The idea work by automating and tracking invoice approval and
+			settlement processes, from initiation to completion. The company has
+			plans to expose the same functionality over mobile app at later stage
+			and hence the backend functionality needs to be expose as reusable
+			API’s</h6>
+		>
+		<head>
+
+<style>
+body {
+	text-align: left;
+}
+
+h2 {
+	color: green;
+}
+</style>
+		</head>
+
+		<body>
+			<h2>Select Supplier or Clients</h2>
+
+			Supplier
+			<input type="radio" checked=true name="user_gender"> Clients
+			<input type="radio" name="user_gender">
+			<form action="/upload" method="post" enctype="multipart/form-data">
+				<input type="file" name="file" id="file" /> <input type="submit"
+					name="submit" value="Submit" />
+			</form>
+		</body>
+	</section>
+
+
+
+
+
+</body>
+</html>
